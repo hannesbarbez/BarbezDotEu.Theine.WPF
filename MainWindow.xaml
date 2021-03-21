@@ -1,0 +1,23 @@
+﻿<Window x:Class="Theine.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Theine"
+        mc:Ignorable="d"
+        Title="Theine" Height="350" Width="700" MinHeight="280" MinWidth="665" WindowStartupLocation="CenterScreen" FontFamily="Segoe UI" Icon="Assets\blue.ico">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="White" Offset="0" />
+            <GradientStop Color="#8AA4B7" Offset="1" />
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Button x:Name="btnMinimize" HorizontalAlignment="Center" VerticalAlignment="Center" Height="32" Margin="30,120,30,30" Content="Minimize this window" Padding="7" FontSize="12" Click="BtnMinimize_Click" Opacity=".7"/>
+        <Image x:Name="iLogo" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Source="Assets/app-internal-200-B.png" Margin="30,-110,30,30" Opacity=".8"/>
+        <Label Content="While this app is running, your computer will not fall asleep." HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" FontWeight="Normal" FontSize="18"/>
+        <Label Content="Closing the app resumes your power settings, allowing the computer to go to sleep." 
+               HorizontalAlignment="Center" VerticalAlignment="Bottom" VerticalContentAlignment="Center" FontWeight="Light" Margin="10" FontSize="16"/>
+        <Label x:Name="lblAbout" Content="Rate this app." HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="11" MouseDown="LblAbout_MouseDown" Margin="0,10,11,0" Cursor="Hand"/>
+    </Grid>
+</Window>
