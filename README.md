@@ -39,3 +39,6 @@ Initial release
 
 # Technology stack
 WPF, C#, .NET
+
+## Author
+www.barbez.eu, during 2018 mainly.
